@@ -1,0 +1,421 @@
+@font-face {
+    font-family: 'FontePioli';
+    src: url(Fontes/Sacramento/Sacramento-Regular.ttf) format('truetype');
+    font-weight: normal;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Nova';
+    src: url(Fontes/Salsa/Salsa-Regular.ttf) format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #fff0f3;
+    overflow-x: hidden;
+}
+
+
+/* HEADER */
+
+header {
+    width: 100%;
+    height: 85px;
+    background-color: #ff9abe;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#titulo h1 {
+    font-family: 'FontePioli';
+    font-size: 70px;
+    margin-top: 15px;
+}
+
+/* CONTEÚDO */
+
+.tela-inicial {
+    height: 900px;
+    background-color: #ff9cd13c;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(to top, #ffb5da81, #203a4300, #74767800),
+        url("imagens/FUNDOnovo.png") no-repeat 50% 50% / cover;
+}
+
+/*DESTAQUES PARTE1*/
+
+.destaques {
+    height: 1000px;
+    background-color: #ffdae1;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.texto1 h2 {
+    font-size: 9.4vh;
+    background-color: #ff9aac;
+    width: 600px;
+    height: 13vh;
+    margin: 5px auto 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+    margin-bottom: 100px;
+    font-family: 'Nova';
+}
+
+
+/* ENCOMENDA PARTE 2*/
+
+.encomenda {
+    height: 780px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(to top, #ffb5da81, #203a4300, #74767800),
+        url("imagens/faleconosco.png") no-repeat 50% 50% / cover;
+}
+
+#caixa2 {
+    position: relative;
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    height: 747px;
+    align-items: center;
+    margin-top: 397px;
+}
+
+#acesso1 {
+    width: 191px;
+    height: 56px;
+    background-color: #ff0097;
+    color: #fff;
+    text-decoration: none;
+    align-self: center;
+    text-align: center;
+    padding: 13px;
+    font-size: 26px;
+    border-radius: 15px;
+    font-family: 'Nova';
+}
+
+#acesso1:hover{
+    color:  #ff0097;
+    background-color: #fff;
+    transition: 2s;
+  }
+
+#acesso2 {
+    width: 191px;
+    height: 56px;
+    background-color: #41c351;
+    color: #fff;
+    text-decoration: none;
+    align-self: center;
+    text-align: center;
+    padding: 13px;
+    font-size: 26px;
+    border-radius: 15px;
+    font-family: 'Nova';
+}
+
+#acesso2:hover{
+    color: #41c351;
+    background-color: #fff;
+    transition: 2s;
+  }
+
+#acesso3 {
+    width: 191px;
+    height: 56px;
+    background-color: #ff621e;
+    text-decoration: none;
+    align-self: center;
+    text-align: center;
+    padding: 13px;
+    font-size: 26px;
+    border-radius: 15px;
+    color: #fff;
+    font-family: 'Nova';
+}
+
+#acesso3:hover{
+    color: #ff621e;
+    background-color: #fff;
+    transition: 2s;
+  }
+
+
+/* NOVIDADES PARTE 3*/
+
+.novidades {
+    background-color: #ee51a4;
+    height: 789px;
+    background-color: #ffdae1;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.texto3 h2 {
+    font-size: 9.4vh;
+    background-color: #ff9aac;
+    width: 600px;
+    height: 13vh;
+    margin: 20px auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+    font-family: 'Nova';
+}
+
+/* RODAPÉ */
+
+.rodape {
+    height: 300px;
+    background-color: blanchedalmond;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#logo-flor img {
+    height: 290px;
+    display: flex;
+}
+
+#wpp img {
+    height: 49px;
+
+}
+
+#shop img {
+    height: 49px;
+}
+
+#insta img {
+    height: 49px;
+}
+
+
+
+
+
+
+
+
+
+
+/*CARROSSEL*/
+
+.wrapper {
+    display: flex;
+    max-width: 100%;
+    position: relative;
+
+}
+
+.wrapper i {
+    top: 50%;
+    height: 44px;
+    width: 44px;
+    color: #343F4F;
+    cursor: pointer;
+    font-size: 1.15rem;
+    position: absolute;
+    text-align: center;
+    line-height: 44px;
+    background: #fff;
+    border-radius: 50%;
+    transform: translateY(-50%);
+    transition: transform 0.1s linear;
+}
+
+.wrapper i:active {
+    transform: translateY(-50%) scale(0.9);
+}
+
+.wrapper i:hover {
+    background: #f2f2f2;
+}
+
+.wrapper i:first-child {
+    left: -22px;
+    display: none;
+}
+
+.wrapper i:last-child {
+    right: -22px;
+}
+
+.wrapper .carousel {
+    font-size: 0px;
+    cursor: pointer;
+    overflow: hidden;
+    white-space: nowrap;
+    scroll-behavior: smooth;
+}
+
+.carousel.dragging {
+    cursor: grab;
+    scroll-behavior: auto;
+}
+
+.carousel.dragging img {
+    pointer-events: none;
+}
+
+.carousel img {
+    height: 500px;
+    object-fit: cover;
+    user-select: none;
+    margin-left: 14px;
+    width: calc(100% / 3);
+    border-radius: 15px;
+}
+
+.carousel img:first-child {
+    margin-left: 0px;
+}
+
+@media screen and (max-width: 900px) {
+    .carousel img {
+        width: calc(100% / 2);
+    }
+}
+
+@media screen and (max-width: 550px) {
+    .carousel img {
+        width: 100%;
+    }
+}
+
+/* CARROSSEL NOVIDADES 2 */
+
+
+.swiper {
+    width: 100%;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+.swiper-slide {
+    width: 300px;
+    height: 400px;
+    box-shadow: 0 15px 50px rgba(0, 0, 0, 0.2);
+    filter: blur(1px);
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    align-items: self-start;
+}
+
+.swiper-slide-active {
+    filter: blur(0px);
+}
+
+.swiper-pagination-bullet,
+.swiper-pagination-bullet-active {
+    background: #fff;
+}
+
+.swiper-slide span {
+    text-transform: uppercase;
+    color: #fff;
+    background: #1b7402;
+    padding: 7px 18px 7px 25px;
+    display: inline-block;
+    border-radius: 0 20px 20px 0px;
+    letter-spacing: 2px;
+    font-size: 0.8rem;
+    font-family: "Open Sans", sans-serif;
+    border-radius: 10px;
+}
+
+.swiper-slide--one span {
+    background: #ee51a4;
+}
+
+.swiper-slide--two span {
+    background: dodgerblue;
+}
+
+.swiper-slide--three span {
+    background: rgb(185, 0, 0);
+}
+
+.swiper-slide--four span {
+    background: rgb(227, 178, 0);
+}
+
+.swiper-slide h2 {
+    color: #fff;
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-size: 1.3rem;
+    line-height: 1.4;
+    margin-bottom: 15px;
+    padding: 25px 45px 0 25px;
+}
+
+.swiper-slide p {
+    color: #fff;
+    font-family: "Roboto", sans-serif;
+    font-weight: 300;
+    display: flex;
+    align-items: center;
+    padding: 0 25px 35px 25px;
+}
+
+.swiper-slide svg {
+    color: #fff;
+    width: 22px;
+    height: 22px;
+    margin-right: 7px;
+}
+
+.swiper-slide--one {
+    background: linear-gradient(to top, #0f2027, #203a4300, #2c536400),
+        url(imagens/necessaire.jpeg) no-repeat 50% 50% / cover;
+}
+
+.swiper-slide--two {
+    background: linear-gradient(to top, #0f2027, #203a4300, #2c536400),
+        url("imagens/santa.jpeg") no-repeat 50% 50% / cover;
+}
+
+.swiper-slide--three {
+    background: linear-gradient(to top, #0f2027, #203a4300, #2c536400),
+        url("imagens/chaveiro.jpeg") no-repeat 50% 50% / cover;
+}
+
+.swiper-slide--four {
+    background: linear-gradient(to top, #0f2027, #203a4300, #2c536400),
+        url("imagens/carteira.jpeg") no-repeat 50% 50% / cover;
+}
+
+.swiper-slide--five {
+    background: linear-gradient(to top, #0f2027, #203a4300, #2c536400),
+        url("imagens/melancia.jpeg") no-repeat 50% 50% / cover;
+}
+
+.swiper-3d .swiper-slide-shadow-left,
+.swiper-3d .swiper-slide-shadow-right {
+    background-image: none;
+}
